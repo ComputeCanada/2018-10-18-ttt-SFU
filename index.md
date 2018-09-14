@@ -145,7 +145,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     Carpentry's <a href="{{ site.swc_site }}/conduct/">Code of Conduct</a>.
   </em>
 </p>
-</p>
 
 {% comment %}
   ACCESSIBILITY
@@ -280,6 +279,5 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p>
   Registration is via the form that may be found 
   <a href="https://www.lib.sfu.ca/help/publish/research-data-management/carpentries-application-form">HERE</a>.  
-  Please come ready to participate fully both days.  While there will be some lecture-based content this course is designed to be very interactive, especially on the second day.</li>
-</ol>
+  Please come ready to participate fully both days.  While there will be some lecture-based content this course is designed to be very interactive, especially on the second day.
     </p>
