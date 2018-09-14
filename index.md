@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "FIXME"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+venue: "Simon Fraser University, Instructor Training"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Rm 7010, Research Commons, W.A.C. Bennett Library, Burnaby"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "ca"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "49.279664, -122.918841"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+humandate: "October 18 & 19"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9am to 5pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2018-10-18      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2018-10-19        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["John Simpson"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: [""]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["john.simpson@computecanada.ca"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes:  http://pad.software-carpentry.org/2018-10-18-ttt-SFU           # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -53,33 +53,42 @@ and our administrator may contact you if we need any extra information.</h4>
 
 <h2 id="general">General Information</h2>
 
-{% comment %}
+<!--
   INTRODUCTION
-
   Edit the general explanatory paragraph below if you want to change
   the pitch.
-{% endcomment %}
-{% if page.carpentry == "swc" %}
-  {% include sc/intro.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/intro.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/intro.html %}
-{% endif %}
+-->
 
-{% comment %}
-  AUDIENCE
+<p>
+  The course is aimed at everyone who is
+  interested in becoming a better teacher. In particular, this training
+  is aimed at those who want to become <a href="{{ site.swc_site }}">Software Carpentry</a>
+  and <a href="{{ site.dc_site }}">Data Carpentry</a>
+  instructors, run workshops and contribute to the Carpentry training
+  materials. You don't currently have to be an instructor or a
+  teacher to attend this workshop, but you do need to be willing and
+  committed to becoming one and to improving your teaching techniques.
+</p>
 
-  Explain who your audience is.  (In particular, tell readers if the
-  workshop is only open to people from a particular institution.
-{% endcomment %}
-{% if page.carpentry == "swc" %}
-  {% include sc/who.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/who.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/who.html %}
-{% endif %}
+<p>
+  <a href="{{ site.swc_site }}">Software Carpentry</a>
+  and <a href="{{ site.dc_site }}">Data Carpentry</a>'s mission is to
+  help scientists and engineers get more research done in less time
+  and with less pain by teaching them basic lab skills for scientific
+  computing.  This hands-on two-day workshop covers the basics of
+  educational psychology and instructional design, and looks at how to
+  use these ideas in both intensive workshops and regular classes.
+</p>
+<p>
+  The workshop is a mix of lectures and hands-on lessons where you
+  practice giving a short lesson using approaches learned and
+  implement some of the teaching techniques which we will discuss.
+  This is training for teaching, not technical training; you do not
+  need any particular technical background, and we will not be
+  teaching that. This workshop is based on the constantly revised and
+  updated
+ <a href="{{ site.training_site }}">curriculum</a>.
+</p>
 
 {% comment %}
   LOCATION
@@ -118,19 +127,29 @@ and our administrator may contact you if we need any extra information.</h4>
 
   Modify the block below if there are any special requirements.
 {% endcomment %}
-<p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  {% if page.carpentry == "swc" %}
-  Software Carpentry's
-  {% elsif page.carpentry == "dc" %}
-  Data Carpentry's
-  {% elsif page.carpentry == "lc" %}
-  Library Carpentry's
-  {% endif %}
-  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+<p>
+  <strong>Requirements:</strong> Participants should bring a laptop
+  that is Internet connected and has a functioning browser.  If you
+  have it, a device for recording audio and video (mobile phones and
+  laptops are OK) is useful as throughout the two days, we are going
+  to record one another teaching in pairs or threes.  It does not have
+  to be high-quality, but it should be good enough that you can
+  understand what someone is saying.
+</p>
+<p>
+  Please note that after this course is over, you will be asked to do
+  three short follow-up exercises online in order to finish qualifying
+  as an instructor: the details are available at
+  <a href="{{ site.training_site }}/checkout/">{{ site.training_site }}/checkout/</a>.
+  If you have any questions about the workshop, the reading material,
+  or anything else, please get in touch.
+</p>
+<p align="center">
+  <em>
+    All participants are required to abide by Software
+    Carpentry's <a href="{{ site.swc_site }}/conduct/">Code of Conduct</a>.
+  </em>
+</p>
 </p>
 
 {% comment %}
